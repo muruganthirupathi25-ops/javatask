@@ -11,7 +11,7 @@ public class moive {
 
     static double ticketPrice = 150;
 
-    // Display Available Seats
+    
     static void showSeats() {
 
         System.out.println("\n===== AVAILABLE SEATS =====");
@@ -31,7 +31,7 @@ public class moive {
         }
     }
 
-    // Book Ticket
+    
     static void bookTicket() {
 
         showSeats();
@@ -54,7 +54,7 @@ public class moive {
 
         double price = ticketPrice;
 
-        // Weekend Pricing
+        
         System.out.print("Is Today Weekend? (yes/no): ");
         String weekend = sc.next();
 
@@ -63,7 +63,7 @@ public class moive {
             System.out.println("Weekend Extra Charge: Rs.50");
         }
 
-        // Discount Coupon
+        
         System.out.print("Apply Coupon? (yes/no): ");
         String coupon = sc.next();
 
@@ -80,7 +80,7 @@ public class moive {
             }
         }
 
-        // Confirm Booking
+        
         seats[row][col] = true;
 
         System.out.println("\n===== BOOKING SUCCESSFUL =====");
@@ -88,7 +88,7 @@ public class moive {
         System.out.println("Ticket Price: Rs." + price);
     }
 
-    // Cancel Ticket
+    
     static void cancelTicket() {
 
         System.out.print("\nEnter Seat Number to Cancel: ");
@@ -110,7 +110,7 @@ public class moive {
         }
     }
 
-    // Movie Rating
+    
     static void movieRating() {
 
         System.out.print("\nEnter Movie Rating (1-5): ");
@@ -123,7 +123,7 @@ public class moive {
         }
     }
 
-    // Available Seats Count
+    
     static void availableSeatsCount() {
 
         int count = 0;
@@ -142,7 +142,7 @@ public class moive {
         System.out.println("Total Booked Seats: " + (25 - count));
     }
 
-    // Main Method
+    
     public static void main(String[] args) {
 
         int choice;
